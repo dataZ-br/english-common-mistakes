@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Possessives, Much, Many & Very Worksheet</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --success: #16a34a;
+      --error: #dc2626;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 1.5rem; line-height: 1.5; }
+    .container { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+    
+    header { background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); border-top: 5px solid var(--primary); text-align: center; }
+    header h1 { font-size: 1.6rem; color: #0f172a; margin-bottom: 0.3rem; }
+    header p { color: var(--muted); font-size: 0.95rem; }
+
+    .card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+    .card h2 { font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 0.5rem; }
+    
+    .rule-box { background: #eff6ff; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; border-radius: 0 8px 8px 0; margin-bottom: 1rem; font-size: 0.9rem; color: #1e40af; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 0.9rem; }
+    th, td { border: 1px solid var(--border); padding: 0.6rem 0.8rem; text-align: left; }
+    th { background: #f8fafc; color: #334155; }
+
+    .q-item { margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px dashed var(--border); font-size: 0.95rem; }
+    .q-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    
+    select, input[type="text"] {
+      padding: 0.35rem 0.6rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--text);
+      outline: none;
+    }
+    select:focus, input[type="text"]:focus { border-color: var(--primary); }
+    input[type="text"] { width: 100%; max-width: 480px; margin-top: 0.4rem; display: block; }
+    .inline-input { display: inline-block; width: 140px; margin: 0 0.3rem; }
+
+    .btn-check {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+    .btn-check:hover { background: var(--primary-hover); }
+
+    .feedback { font-size: 0.85rem; font-weight: 600; margin-top: 0.4rem; }
+    .feedback.ok { color: var(--success); }
+    .feedback.err { color: var(--error); }
+
+    .role-play-box { background: #fefce8; border-left: 4px solid #ca8a04; padding: 1rem; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .role-play-box ul { padding-left: 1.2rem; margin-top: 0.4rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>POSSESSIVES, MUCH, MANY & VERY</h1>
+    <p>Daily routines, sleep and work &bull; Interactive Worksheet</p>
+  </header>
+
+  <!-- PART 1 -->
+  <section class="card">
+    <h2>PART 1: Possessives (Adjectives vs. Pronouns)</h2>
+    <div class="rule-box">
+      <strong>Rule:</strong> <em>His, her, their, your</em> come <strong>before a noun</strong>.<br>
+      <em>His, hers, theirs, yours, mine</em> <strong>replace the noun</strong> (no noun after them).
+    </div>
+    
+    <table>
+      <tr><th>Before a noun</th><th>Without a noun</th></tr>
+      <tr><td>This is his coffee.</td><td>This coffee is his.</td></tr>
+      <tr><td>This is her phone.</td><td>This phone is hers.</td></tr>
+      <tr><td>This is their house.</td><td>This house is theirs.</td></tr>
+      <tr><td>This is your breakfast.</td><td>This breakfast is yours.</td></tr>
+    </table>
+
+    <h3 style="font-size:1rem; margin: 1rem 0 0.5rem;">2. Choose the correct word</h3>
+    <div class="q-item">
+      1. My brother works at night. 
+      <select id="p2_1"><option value="">-- select --</option><option value="His">His</option><option value="Hers">Hers</option></select> schedule is very different from mine.
+    </div>
+    <div class="q-item">
+      2. My parents wake up early. 
+      <select id="p2_2"><option value="">-- select --</option><option value="Their">Their</option><option value="Theirs">Theirs</option></select> alarm rings at 5:30.
+    </div>
+    <div class="q-item">
+      3. This is my sister's coffee. It's 
+      <select id="p2_3"><option value="">-- select --</option><option value="her">her</option><option value="hers">hers</option></select>.
+    </div>
+    <div class="q-item">
+      4. We have different routines. 
+      <select id="p2_4"><option value="">-- select --</option><option value="Our">Our</option><option value="Ours">Ours</option></select> routines are not the same.
+    </div>
+    <div class="q-item">
+      5. I think this phone belongs to Alexa. It's 
+      <select id="p2_5"><option value="">-- select --</option><option value="her">her</option><option value="hers">hers</option></select>.
+    </div>
+    <div class="q-item">
+      6. They have a lot of work. 
+      <select id="p2_6"><option value="">-- select --</option><option value="Their">Their</option><option value="Theirs">Theirs</option></select> jobs are demanding.
+    </div>
+    <div class="q-item">
+      7. Is this your breakfast or 
+      <select id="p2_7"><option value="">-- select --</option><option value="my">my</option><option value="mine">mine</option></select>?
+    </div>
+    <div class="q-item">
+      8. My husband forgot 
+      <select id="p2_8"><option value="">-- select --</option><option value="his">his</option><option value="hers">hers</option></select> keys at home.
+    </div>
+
+    <button class="btn-check" onclick="checkPart2()">Check Answers</button>
+    <div id="fb_p2" class="feedback"></div>
+
+    <h3 style="font-size:1rem; margin: 1.5rem 0 0.5rem;">3. Whose is it?</h3>
+    <p style="font-size:0.85rem; color:var(--muted); margin-bottom: 0.5rem;">Options: <em>his &bull; hers &bull; theirs &bull; yours &bull; mine</em></p>
+    <div class="q-item">1. This coffee belongs to me. It's <input type="text" id="p3_1" class="inline-input">.</div>
+    <div class="q-item">2. That laptop belongs to my brother. It's <input type="text" id="p3_2" class="inline-input">.</div>
+    <div class="q-item">3. These bags belong to my parents. They're <input type="text" id="p3_3" class="inline-input">.</div>
+    <div class="q-item">4. This jacket belongs to my sister. It's <input type="text" id="p3_4" class="inline-input">.</div>
+    <div class="q-item">5. Is this your phone? Is it <input type="text" id="p3_5" class="inline-input">?</div>
+
+    <button class="btn-check" onclick="checkPart3()">Check Answers</button>
+    <div id="fb_p3" class="feedback"></div>
+  </section>
+
+  <!-- PART 2 -->
+  <section class="card">
+    <h2>PART 2: Much, Many & Very</h2>
+    <table>
+      <tr><th>Word</th><th>Use</th><th>Example</th></tr>
+      <tr><td><strong>Very</strong></td><td>Intensifies adjectives and adverbs</td><td>I'm <em>very</em> tired.</td></tr>
+      <tr><td><strong>Many</strong></td><td>Countable plural nouns</td><td>I have <em>many</em> tasks.</td></tr>
+      <tr><td><strong>Much</strong></td><td>Uncountable nouns (mass/time/money)</td><td>I don't have <em>much</em> time.</td></tr>
+    </table>
+
+    <h3 style="font-size:1rem; margin: 1rem 0 0.5rem;">6. Choose much, many or very</h3>
+    <div class="q-item">1. I have <select id="p6_1"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> things to do before going to bed.</div>
+    <div class="q-item">2. My brother is <select id="p6_2"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> tired after work.</div>
+    <div class="q-item">3. How <select id="p6_3"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> coffee do you drink every day?</div>
+    <div class="q-item">4. There are <select id="p6_4"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> people awake at 7 a.m.</div>
+    <div class="q-item">5. I don't have <select id="p6_5"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> time to relax during the week.</div>
+    <div class="q-item">6. My sister is <select id="p6_6"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> good at organizing her schedule.</div>
+    <div class="q-item">7. There aren't <select id="p6_7"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> hours of daylight in winter.</div>
+    <div class="q-item">8. I feel <select id="p6_8"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> sleepy after lunch.</div>
+    <div class="q-item">9. How <select id="p6_9"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> information do you have about sleep?</div>
+    <div class="q-item">10. She has <select id="p6_10"><option value="">--</option><option>much</option><option>many</option><option>very</option></select> responsibilities at work.</div>
+
+    <button class="btn-check" onclick="checkPart6()">Check Answers</button>
+    <div id="fb_p6" class="feedback"></div>
+
+    <h3 style="font-size:1rem; margin: 1.5rem 0 0.5rem;">7. Countable (C) or Uncountable (U)?</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem;">
+      <div>1. sleep: <select id="c_1"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>6. tasks: <select id="c_6"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>2. hours: <select id="c_2"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>7. time: <select id="c_7"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>3. coffee: <select id="c_3"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>8. ideas: <select id="c_8"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>4. people: <select id="c_4"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>9. work: <select id="c_9"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>5. information: <select id="c_5"><option value="">--</option><option>C</option><option>U</option></select></div>
+      <div>10. cups: <select id="c_10"><option value="">--</option><option>C</option><option>U</option></select></div>
+    </div>
+    <button class="btn-check" onclick="checkCountable()">Check C/U</button>
+    <div id="fb_cu" class="feedback"></div>
+  </section>
+
+  <!-- PART 3 -->
+  <section class="card">
+    <h2>PART 3: Put It Together</h2>
+    <h3 style="font-size:1rem; margin-bottom: 0.5rem;">10. Choose the correct alternative</h3>
+    
+    <div class="q-item">
+      <strong>1. My sister has a lot of responsibilities.</strong><br>
+      <label><input type="radio" name="opt_1" value="a"> a) She has many responsibilities.</label><br>
+      <label><input type="radio" name="opt_1" value="b"> b) She has very responsibilities.</label>
+    </div>
+    <div class="q-item">
+      <strong>2. My brother is extremely sleepy.</strong><br>
+      <label><input type="radio" name="opt_2" value="a"> a) He is much sleepy.</label><br>
+      <label><input type="radio" name="opt_2" value="b"> b) He is very sleepy.</label>
+    </div>
+    <div class="q-item">
+      <strong>3. I don't have a lot of free time.</strong><br>
+      <label><input type="radio" name="opt_3" value="a"> a) I don't have many free time.</label><br>
+      <label><input type="radio" name="opt_3" value="b"> b) I don't have much free time.</label>
+    </div>
+    <div class="q-item">
+      <strong>4. The alarm belongs to my parents.</strong><br>
+      <label><input type="radio" name="opt_4" value="a"> a) It's their alarm.</label><br>
+      <label><input type="radio" name="opt_4" value="b"> b) It's theirs alarm.</label>
+    </div>
+    <div class="q-item">
+      <strong>5. The coffee belongs to my sister.</strong><br>
+      <label><input type="radio" name="opt_5" value="a"> a) The coffee is her.</label><br>
+      <label><input type="radio" name="opt_5" value="b"> b) The coffee is hers.</label>
+    </div>
+    <div class="q-item">
+      <strong>6. My friends have a lot of ideas.</strong><br>
+      <label><input type="radio" name="opt_6" value="a"> a) They have many ideas.</label><br>
+      <label><input type="radio" name="opt_6" value="b"> b) They have much ideas.</label>
+    </div>
+
+    <button class="btn-check" onclick="checkPart10()">Check Alternatives</button>
+    <div id="fb_p10" class="feedback"></div>
+  </section>
+
+  <!-- PART 4 & 5 -->
+  <section class="card">
+    <h2>PART 4 & 5: Vocabulary & Speaking Tasks</h2>
+    <div class="role-play-box">
+      <strong>Role Play: Morning People vs. Night Owls</strong>
+      <p style="margin-top:0.4rem;"><strong>Student A:</strong> Prefers mornings (explain morning routine, hours of sleep, productivity).</p>
+      <p><strong>Student B:</strong> Prefers nights (explain late routine, coffee consumption, fighting sleep).</p>
+      <p style="margin-top:0.5rem;"><strong>Partner Questions:</strong></p>
+      <ul>
+        <li>How many hours do you usually sleep?</li>
+        <li>How much coffee do you drink?</li>
+        <li>Are you very productive in the morning?</li>
+        <li>Do you think people have different biological clocks?</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+  function checkPart2() {
+    const ans = { p2_1:"His", p2_2:"Their", p2_3:"hers", p2_4:"Our", p2_5:"hers", p2_6:"Their", p2_7:"mine", p2_8:"his" };
+    let score = 0;
+    for (let k in ans) {
+      if (document.getElementById(k).value === ans[k]) score++;
+    }
+    const fb = document.getElementById("fb_p2");
+    fb.className = score === 8 ? "feedback ok" : "feedback err";
+    fb.textContent = `Score: ${score} / 8 ` + (score === 8 ? "— Perfect!" : "— Review your answers.");
+  }
+
+  function checkPart3() {
+    const ans = { p3_1:"mine", p3_2:"his", p3_3:"theirs", p3_4:"hers", p3_5:"yours" };
+    let score = 0;
+    for (let k in ans) {
+      if (document.getElementById(k).value.trim().toLowerCase() === ans[k]) score++;
+    }
+    const fb = document.getElementById("fb_p3");
+    fb.className = score === 5 ? "feedback ok" : "feedback err";
+    fb.textContent = `Score: ${score} / 5 ` + (score === 5 ? "— Excellent!" : "— Try again.");
+  }
+
+  function checkPart6() {
+    const ans = {
+      p6_1:"many", p6_2:"very", p6_3:"much", p6_4:"many", p6_5:"much",
+      p6_6:"very", p6_7:"many", p6_8:"very", p6_9:"much", p6_10:"many"
+    };
+    let score = 0;
+    for (let k in ans) {
+      if (document.getElementById(k).value === ans[k]) score++;
+    }
+    const fb = document.getElementById("fb_p6");
+    fb.className = score === 10 ? "feedback ok" : "feedback err";
+    fb.textContent = `Score: ${score} / 10 ` + (score === 10 ? "— All correct!" : "— Check much/many/very.");
+  }
+
+  function checkCountable() {
+    const ans = { c_1:"U", c_2:"C", c_3:"U", c_4:"C", c_5:"U", c_6:"C", c_7:"U", c_8:"C", c_9:"U", c_10:"C" };
+    let score = 0;
+    for (let k in ans) {
+      if (document.getElementById(k).value === ans[k]) score++;
+    }
+    const fb = document.getElementById("fb_cu");
+    fb.className = score === 10 ? "feedback ok" : "feedback err";
+    fb.textContent = `Score: ${score} / 10 ` + (score === 10 ? "— Great classification!" : "— Remember: time/work/information are uncountable.");
+  }
+
+  function checkPart10() {
+    const ans = { opt_1:"a", opt_2:"b", opt_3:"b", opt_4:"a", opt_5:"b", opt_6:"a" };
+    let score = 0;
+    for (let k in ans) {
+      const el = document.querySelector(`input[name="${k}"]:checked`);
+      if (el && el.value === ans[k]) score++;
+    }
+    const fb = document.getElementById("fb_p10");
+    fb.className = score === 6 ? "feedback ok" : "feedback err";
+    fb.textContent = `Score: ${score} / 6 ` + (score === 6 ? "— All choices correct!" : "— Review the options.");
+  }
+</script>
+</body>
+</html>
